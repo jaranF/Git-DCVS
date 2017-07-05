@@ -19,9 +19,9 @@ Anything I learn about Git which I think will be of future use (particularly if 
 | gar                     | **Usage:** **`gar` `<`*remote_repo_path*`>`**<br>Does a `git add remote`           |
 
 ## Notes
-The `gls` command is useful if you are just starting to learn git or want a quick refresher how it organises things internall (i.e. Blobs, Trees and Commits etc.)
+The `gls` command is useful if you are just starting to learn git or want a quick refresher on how it organises things internally (i.e. Blobs, Trees and Commits etc.)
 
-The usefulness of `gar` is if you are in the habit of frequently making new repos (obviosuly a different sub-directory for each one) on the *SAME* server via
+The usefulness of `gar` is if you are in the habit of frequently making new repos (obviosuly a different sub-directory for each one) on the *SAME* server via<br>
 `git init --bare --shared`<br>
 `git update-server-info `<br>
 Obviously, the first part of the argument won't change that much i.e. `ssh://GIT_USERNAME@HOST:__PORT__/common_repo_path` so to save you from having to type all that you can use this command and just supply the sub-directory path to the new repo. 
