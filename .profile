@@ -10,5 +10,5 @@ alias ga="git add ."
 alias gpull="git pull origin master"
 alias gpush="git push origin master"
 gac() { git add .; gs;  git commit -m "$1";  }
-gar() { git remote add origin ssh://gituJaran@192.168.1.65:225/volume1/git_repos/$1; }
+gar() { git remote add origin ssh://MYGITGUSERNAME@IP-ADDR_OR_HOSTNAME:__PORT__/path_to_repo/$1; }
 gls() { hashtemp=$(find .git/objects -type f | sort | pcregrep -M "[0-9a-z]{2}\/[0-9a-z]{38}$" | awk -F "/" '{print "printf '\''"$3$4"  '\''; git cat-file -t "$3$4";"}'); eval $hashtemp; }
